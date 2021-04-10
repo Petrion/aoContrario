@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aoContrario</title>
+    <script type="text/javascript">
+        function inverter() {
+            var inverter = document.getElementsByName("txt");
+            valor = inverter.item(0).value.toString().split("");
+            normal = valor.reverse().join("");
+            document.body.innerHTML += normal + "<br />";
+        }
+    </script>
+
+</head>
+<body>
+<h1 class="titulo">Inverter nome</h1>
+<form>
+    <input class="nome" type="text" name="txt" value=""/>
+    <input class="enviar" type="button" id="btn" value="Inverter" onclick="inverter()"/>
+</form>
+
+
+</body>
+</html>
